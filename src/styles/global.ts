@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
 
   :root {
     --text: #575757;
+    --font-family: 'Nunito', sans-serif;
   }
 
   * {
@@ -19,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     color: var(--text);
+    font-family: var(--font-family);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
