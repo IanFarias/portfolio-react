@@ -1,10 +1,13 @@
+import { ThemeProvider } from './styles/ThemeProvider';
 import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Home />
+      </div>
+    </ThemeProvider>
   );
 }
 

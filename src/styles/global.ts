@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     color: var(--text);
+    font-size: 16px;
     font-family: var(--font-family);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
