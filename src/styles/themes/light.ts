@@ -21,6 +21,7 @@ const lightTheme: ITheme = {
     grey: {
       100: '#AAAAAA',
       200: '#575757',
+      300: '#E7E7E7',
     },
   },
 };

@@ -19,6 +19,7 @@ export interface ITheme {
     grey: {
       100: string;
       200: string;
+      300: string;
     };
   };
 }
