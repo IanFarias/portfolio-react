@@ -39,3 +39,9 @@ export const Link = styled.a`
   text-decoration: none;
   letter-spacing: 0.2rem;
 `;
+
+export const ContactContainer = styled.ul`
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+`;
