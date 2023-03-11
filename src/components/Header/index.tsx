@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import MenuHamburguer from '../MenuHamburguer';
 import MenuNav from '../MenuNav';
+import Switch from '../Switch';
 import * as S from './styles';
 
 const Header = () => {
@@ -12,7 +13,10 @@ const Header = () => {
   return (
     <S.Header>
       <a href="#">Ian Farias</a>
-      <MenuHamburguer isOpen={openMenu} onClick={handleOpenMenu} />
+      <S.Controls>
+        <Switch />
+        <MenuHamburguer isOpen={openMenu} onClick={handleOpenMenu} />
+      </S.Controls>
       <MenuNav isOpen={openMenu} />
     </S.Header>
   );

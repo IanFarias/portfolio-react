@@ -16,3 +16,8 @@ export const Header = styled.header`
     color: ${({ theme }) => theme.colors.title};
   }
 `;
+
+export const Controls = styled.div`
+  display: flex;
+  gap: 15px;
+`;
