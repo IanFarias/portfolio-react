@@ -9,6 +9,7 @@ export const listIcon: listIconProps = {
       height={size}
       viewBox="0 0 96 96"
       width={size}
+      aria-hidden="true"
     >
       <g id="CV">
         <rect
@@ -176,6 +177,7 @@ export const listIcon: listIconProps = {
       height={size}
       viewBox="0 0 512 512"
       width={size}
+      aria-hidden="true"
     >
       <path
         d="m462 10h-412c-22.089844 0-40 17.910156-40 40v412c0 22.089844 17.910156 40 40 40h412c22.089844 0 40-17.910156 40-40v-412c0-22.089844-17.910156-40-40-40zm0 0"
@@ -193,6 +195,7 @@ export const listIcon: listIconProps = {
   ),
   linkedin: (primaryColor: string, size: number) => (
     <svg
+      aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       height={size}
       viewBox="0 0 512 512"
@@ -224,6 +227,7 @@ export const listIcon: listIconProps = {
   ),
   htmlfile: (primaryColor: string, size: number) => (
     <svg
+      aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       height={size}
       viewBox="0 0 64 64"
@@ -280,6 +284,7 @@ export const listIcon: listIconProps = {
   ),
   apiIcon: (primaryColor: string, size: number) => (
     <svg
+      aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       id="Layer_5"
       enable-background="new 0 0 64 64"
@@ -330,6 +335,7 @@ export const listIcon: listIconProps = {
   ),
   moon: (primaryColor: string, size: number) => (
     <svg
+      aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       id="Capa_1"
       enable-background="new 0 0 512 512"
@@ -425,6 +431,7 @@ export const listIcon: listIconProps = {
   ),
   sun: (primaryColor: string, size: number) => (
     <svg
+      aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       clip-rule="evenodd"
       fillRule="evenodd"
@@ -452,6 +459,7 @@ export const listIcon: listIconProps = {
   ),
   coffee: (primaryColor: string, size: number) => (
     <svg
+      aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       height={size}
       viewBox="0 0 60 57"

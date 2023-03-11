@@ -38,6 +38,10 @@ export const Link = styled.a`
   font-weight: lighter;
   text-decoration: none;
   letter-spacing: 0.2rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const ContactContainer = styled.ul`
