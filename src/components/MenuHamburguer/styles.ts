@@ -5,6 +5,7 @@ interface Props {
 }
 
 export const HamburguerButton = styled.button<Props>`
+  position: relative;
   width: 30px;
   height: 30px;
   background: ${({ theme }) => theme.colors.secondary};
@@ -16,6 +17,15 @@ export const HamburguerButton = styled.button<Props>`
   gap: 4px;
   border-radius: 4px;
   box-shadow: 2px 2px ${({ theme }) => theme.colors.black};
+
+  ::after {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    width: 44px;
+    height: 44px;
+  }
 
   span.bar {
     position: relative;
