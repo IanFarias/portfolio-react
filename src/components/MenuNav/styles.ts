@@ -30,7 +30,7 @@ export const LinkContainer = styled.ul`
   text-align: center;
 `;
 
-export const Link = styled.a`
+export const LinkNav = styled.a`
   display: block;
   padding: 1.45rem;
   font-size: 1.8rem;

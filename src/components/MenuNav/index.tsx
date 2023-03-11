@@ -1,51 +1,20 @@
-import { useState } from 'react';
+import { LINKS_SECTIONS } from '../../constants/anchors';
 import Icon from '../Icon';
-import MenuHamburguer from '../MenuHamburguer';
 import * as S from './styles';
 
-const LINKS_SECTIONS = [
-  {
-    url: '#',
-    label: 'Sobre mim',
-  },
-  {
-    url: '#',
-    label: 'Tecnologias',
-  },
-  {
-    url: '#',
-    label: 'Serviços',
-  },
-  {
-    url: '#',
-    label: 'Projetos',
-  },
-  {
-    url: '#',
-    label: 'Experiência',
-  },
-  {
-    url: '#',
-    label: 'Contato',
-  },
-];
+interface MenuNavProps {
+  isOpen: boolean;
+}
 
-const MenuNav = () => {
-  const [openMenu, setOpenMenu] = useState(false);
-
-  const handleOpenMenu = () => {
-    setOpenMenu(!openMenu);
-  };
-
+const MenuNav: React.FC<MenuNavProps> = ({ isOpen }) => {
   return (
     <>
-      <MenuHamburguer isOpen={openMenu} onClick={handleOpenMenu} />
-      <S.Nav isOpen={openMenu}>
+      <S.Nav isOpen={isOpen}>
         <S.LinkContainer>
           {LINKS_SECTIONS.map((item, index) => {
             return (
               <li key={`link-contact-header-${index}`}>
-                <S.Link href={item.url}>{item.label}</S.Link>
+                <S.LinkNav href={item.url}>{item.label}</S.LinkNav>
               </li>
             );
           })}
