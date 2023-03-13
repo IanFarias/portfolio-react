@@ -32,7 +32,7 @@ export const Checkbox = styled.input`
   }
 
   &:focus-visible + label {
-    box-shadow: 0px 0px 4px 3px #df0000;
+    box-shadow: 0px 0px 0px 1px ${({ theme }) => theme.colors.secondary};
   }
 `;
 
@@ -46,4 +46,13 @@ export const Label = styled.label`
   border-radius: 50%;
   z-index: 1;
   transition: 0.2s transform;
+
+  ::after {
+    content: '';
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    top: -10px;
+    left: -8px;
+  }
 `;
