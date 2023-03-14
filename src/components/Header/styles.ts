@@ -7,6 +7,7 @@ export const Header = styled.header`
   align-items: center;
   position: relative;
   justify-content: space-between;
+  background-color: ${({ theme }) => theme.colors.background};
 
   & > a {
     font-size: 1.8rem;

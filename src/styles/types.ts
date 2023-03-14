@@ -21,5 +21,9 @@ export interface ITheme {
       200: string;
       300: string;
     };
+    switch: {
+      button: string;
+      background: string;
+    };
   };
 }

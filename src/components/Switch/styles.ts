@@ -10,16 +10,16 @@ export const Container = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.black};
   border-radius: 50px;
   box-shadow: 1px 1px ${({ theme }) => theme.colors.black};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.switch.background};
 
   .switcher-moon-icon {
     position: relative;
-    right: -2px;
+    right: -16px;
   }
 
   .switcher-sun-icon {
     position: relative;
-    right: -16px;
+    right: -2px;
   }
 `;
 
@@ -32,7 +32,7 @@ export const Checkbox = styled.input`
   }
 
   &:focus-visible + label {
-    box-shadow: 0px 0px 0px 1px ${({ theme }) => theme.colors.secondary};
+    box-shadow: 0px 0px 0px 1px red;
   }
 `;
 
@@ -42,7 +42,7 @@ export const Label = styled.label`
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-color: ${({ theme }) => theme.colors.terciary};
+  background-color: ${({ theme }) => theme.colors.switch.button};
   border-radius: 50%;
   z-index: 1;
   transition: 0.2s transform;

@@ -1,17 +1,17 @@
 import { ITheme } from '../types';
 
-const lightTheme: ITheme = {
-  title: 'light',
+const darkTheme: ITheme = {
+  title: 'dark',
 
   colors: {
     primary: '#242E35',
-    secondary: '#EA5455',
-    terciary: '#36405D',
+    secondary: '#36405D',
+    terciary: '#EA5455',
 
-    background: '#FFFFFF',
+    background: '#242E35',
 
     text: '#575757',
-    title: '#242E35',
+    title: '#FFFFFF',
 
     white: '#FFFFFF',
     black: '#000000',
@@ -24,10 +24,10 @@ const lightTheme: ITheme = {
       300: '#E7E7E7',
     },
     switch: {
-      button: '#36405D',
-      background: '#FFFFFF',
+      button: '#FFFFFF',
+      background: '#36405D',
     },
   },
 };
 
-export default lightTheme;
+export default darkTheme;
