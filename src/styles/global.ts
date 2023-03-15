@@ -15,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 62.5%;
-    line-height: 1.5rem;
   }
 
   body {
@@ -24,6 +23,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: var(--font-family);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
+    background-color: ${({ theme }) => theme.colors.background};
+    
   }
 
   ul, ol, li {

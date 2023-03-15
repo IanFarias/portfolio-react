@@ -16,7 +16,7 @@ const THEME_KEY = 'theme';
 export const ThemingContext = createContext({} as ThemingContextData);
 
 export const ThemingProvider = ({ children }: ThemingProviderProps) => {
-  const [theme, setTheme] = usePersistedState(THEME_KEY, 'light');
+  const [theme, setTheme] = usePersistedState<string>(THEME_KEY, 'light');
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');

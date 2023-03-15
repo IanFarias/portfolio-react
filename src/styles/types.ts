@@ -1,4 +1,12 @@
-export interface ITheme {
+export interface IDefaultTheme {
+  sizes: {
+    small: string;
+    medium: string;
+    large: string;
+  };
+}
+
+export interface IThemeColors {
   title: string;
 
   colors: {
@@ -27,3 +35,5 @@ export interface ITheme {
     };
   };
 }
+
+export interface ITheme extends IThemeColors, IDefaultTheme {}

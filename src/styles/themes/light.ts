@@ -1,6 +1,6 @@
-import { ITheme } from '../types';
+import { IThemeColors } from '../types';
 
-const lightTheme: ITheme = {
+const lightTheme: IThemeColors = {
   title: 'light',
 
   colors: {
