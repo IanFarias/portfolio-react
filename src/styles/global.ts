@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     color: var(--text);
+    line-height: 22px;
     font-size: 16px;
     font-family: var(--font-family);
     min-height: 100vh;

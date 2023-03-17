@@ -17,6 +17,7 @@ export const Nav = styled.nav<Props>`
   position: absolute;
   height: 100vh;
   visibility: hidden;
+  background-color: ${({ theme }) => theme.colors.background};
 
   transition: transform 0.3s ease-in-out;
 
@@ -34,7 +35,7 @@ export const LinkNav = styled.a`
   display: block;
   padding: 1.45rem;
   font-size: 1.8rem;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.text};
   font-weight: lighter;
   text-decoration: none;
   letter-spacing: 0.2rem;

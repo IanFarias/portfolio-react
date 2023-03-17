@@ -6,7 +6,10 @@ interface MenuButtonProps {
   onClick: () => void;
 }
 
-const MenuHamburguer = ({ isOpen, onClick }: MenuButtonProps) => {
+const MenuHamburguer: React.FC<MenuButtonProps> = ({
+  isOpen,
+  onClick,
+}: MenuButtonProps) => {
   return (
     <S.HamburguerButton
       aria-expanded={isOpen}

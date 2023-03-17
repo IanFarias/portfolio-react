@@ -10,7 +10,7 @@ const darkTheme: IThemeColors = {
 
     background: '#242E35',
 
-    text: '#575757',
+    text: '#FFFFFF',
     title: '#FFFFFF',
 
     white: '#FFFFFF',

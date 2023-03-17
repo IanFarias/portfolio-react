@@ -4,7 +4,7 @@ import VisuallyHidden from '../baseComponents/VisuallyHidden';
 import Icon from '../Icon';
 import * as S from './styles';
 
-const Switch = () => {
+const Switch: React.FC = () => {
   const { theme, toggleTheme } = useContext(ThemingContext);
 
   const handleChange = () => {

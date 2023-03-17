@@ -4,7 +4,7 @@ import MenuNav from '../MenuNav';
 import Switch from '../Switch';
 import * as S from './styles';
 
-const Header = () => {
+const Header: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const handleOpenMenu = () => {
