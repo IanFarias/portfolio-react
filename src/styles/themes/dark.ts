@@ -22,7 +22,14 @@ const darkTheme: IThemeColors = {
       100: '#AAAAAA',
       200: '#575757',
       300: '#E7E7E7',
+      400: '#F4F4F4',
+      500: '#687496',
     },
+
+    card: {
+      background: '#283742',
+    },
+
     switch: {
       button: '#FFFFFF',
       background: '#36405D',

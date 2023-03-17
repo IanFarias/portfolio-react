@@ -22,7 +22,14 @@ const lightTheme: IThemeColors = {
       100: '#AAAAAA',
       200: '#575757',
       300: '#E7E7E7',
+      400: '#F4F4F4',
+      500: '#D6D6D6',
     },
+
+    card: {
+      background: '#F4F4F4',
+    },
+
     switch: {
       button: '#36405D',
       background: '#FFFFFF',

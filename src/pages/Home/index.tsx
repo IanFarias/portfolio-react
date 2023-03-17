@@ -1,5 +1,7 @@
 import Heading from '../../components/baseComponents/Heading';
 import Header from '../../components/Header';
+import Icon from '../../components/Icon';
+import CardServices from './components/CardServices';
 import * as S from './styles';
 
 const Home: React.FC = () => {
@@ -60,6 +62,34 @@ const Home: React.FC = () => {
               <li>SQL</li>
             </div>
           </S.ListContainer>
+        </S.Section>
+        <S.Section>
+          <div>
+            <S.Subtitle>Serviços</S.Subtitle>
+            <Heading level={1} fontWeight={700} transform="uppercase">
+              O que posso fazer
+            </Heading>
+          </div>
+          <S.CardContainer>
+            <CardServices
+              title="Frontend apps"
+              listTitle="Criação de aplicações client-side"
+              topicList={['Landing Pages', 'Web Apps', 'SPA']}
+              icon={<Icon icon="htmlfile" size={24} />}
+              description={
+                'Seguindo as melhores práticas de semântica  de código e acessibilidade.'
+              }
+            />
+            <CardServices
+              title="Backend apps"
+              listTitle="Criação de server-side apps"
+              topicList={["API's REST", "BFF's"]}
+              icon={<Icon icon="apiIcon" size={24} />}
+              description={
+                'Seguindo as melhores práticas de semântica , escalabilidade e segurança.'
+              }
+            />
+          </S.CardContainer>
         </S.Section>
       </S.Container>
     </>
