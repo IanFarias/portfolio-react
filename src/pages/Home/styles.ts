@@ -54,3 +54,9 @@ export const CardContainer = styled.div`
   flex-direction: column;
   gap: 40px;
 `;
+
+export const ProjectsContainer = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`

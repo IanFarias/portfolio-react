@@ -1,7 +1,10 @@
 import Heading from '../../components/baseComponents/Heading';
 import Header from '../../components/Header';
 import Icon from '../../components/Icon';
+import CardProject from './components/CardProject';
 import CardServices from './components/CardServices';
+import image from '../../assets/avatarmemorygame.png';
+
 import * as S from './styles';
 
 const Home: React.FC = () => {
@@ -66,7 +69,7 @@ const Home: React.FC = () => {
         <S.Section>
           <div>
             <S.Subtitle>Serviços</S.Subtitle>
-            <Heading level={1} fontWeight={700} transform="uppercase">
+            <Heading level={2} fontWeight={700} transform="uppercase">
               O que posso fazer
             </Heading>
           </div>
@@ -90,6 +93,26 @@ const Home: React.FC = () => {
               }
             />
           </S.CardContainer>
+        </S.Section>
+
+        <S.Section>
+          <div>
+            <S.Subtitle>Portfolio</S.Subtitle>
+            <Heading level={2} fontWeight={700} transform="uppercase">
+              Projetos
+            </Heading>
+          </div>
+          <S.ProjectsContainer>
+            <li>
+              <CardProject image={image} title="Avatar Memory Game" />
+            </li>
+            <li>
+              <CardProject image={image} title="Avatar Memory Game" />
+            </li>
+            <li>
+              <CardProject image={image} title="Avatar Memory Game" />
+            </li>
+          </S.ProjectsContainer>
         </S.Section>
       </S.Container>
     </>
