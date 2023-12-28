@@ -26,6 +26,20 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     background-color: ${({ theme }) => theme.colors.background};
     
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+ 
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: transparent;
+    }
+ 
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #dad7d7;
+    }
   }
 
   ul, ol, li {

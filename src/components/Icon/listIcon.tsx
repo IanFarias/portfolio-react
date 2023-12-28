@@ -547,4 +547,15 @@ export const listIcon: listIconProps = {
       </g>
     </svg>
   ),
+  bullet: (primaryColor: string, size: number) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 13 14"
+      fill="#EA5455"
+    >
+      <path d="M12.9997 7.0706L0.939039 13.8926L1.06132 0.0367634L12.9997 7.0706Z" />
+    </svg>
+  ),
 };

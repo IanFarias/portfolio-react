@@ -21,6 +21,9 @@ export interface IThemeColors {
 
     white: string;
     black: string;
+    red: string;
+    navy: string;
+    lightPurple: string;
 
     success: string;
 

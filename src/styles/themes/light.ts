@@ -15,6 +15,9 @@ const lightTheme: IThemeColors = {
 
     white: '#FFFFFF',
     black: '#000000',
+    red: '#EA5455',
+    navy: '#36405D',
+    lightPurple: '#BEB4FF',
 
     success: '#008732',
 
