@@ -20,9 +20,10 @@ export const Button = styled.button<ButtonProps>`
   border-radius: 4px;
   min-height: 44px;
   min-width: 44px;
+  color: white;
 
   :disabled {
-    background-color: E7E7E7;
+    background-color: #e7e7e7;
   }
 
   ${({ variant }) => BUTTON_VARIANTS[variant || 'primary']}

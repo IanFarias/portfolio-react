@@ -59,4 +59,32 @@ export const ProjectsContainer = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
-`
+`;
+
+export const ContactContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 76%;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: ${({ theme }) => theme.colors.text};
+  }
+
+  button {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 48px;
+  }
+`;
+
+export const Highlighted = styled.span`
+  color: ${({ theme }) => theme.colors.terciary};
+`;
+
+export const BreakLine = styled.span``;

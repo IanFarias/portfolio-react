@@ -59,6 +59,7 @@ export const TabPanel = styled.div<TabPanelProps>`
 export const Title = styled.h3`
   font-size: ${({ theme }) => theme.sizes.large};
   color: ${({ theme }) => theme.colors.title};
+  margin-bottom: 6px;
 `;
 
 export const Location = styled.span`
