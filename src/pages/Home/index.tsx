@@ -7,6 +7,7 @@ import image from '../../assets/avatarmemorygame.png';
 
 import ExperienceTabs from './components/ExperienceTabs';
 import * as S from './styles';
+import Button from '../../components/baseComponents/Button';
 
 const TABS = [
   {
@@ -194,6 +195,22 @@ const Home: React.FC = () => {
             Experiência
           </Heading>
           <ExperienceTabs experiences={TABS} />
+        </S.Section>
+
+        <S.Section>
+          <S.ContactContainer>
+            <Heading level={2}>
+              Quer construir seu projeto? <S.BreakLine></S.BreakLine>
+              <S.Highlighted>Entre em contato!</S.Highlighted>
+            </Heading>
+
+            <p>
+              Eu estou disponível para novos projetos. Entre em contato caso
+              queira colaborar para construir o seu projeto!
+            </p>
+
+            <Button variant="secondary">Enviar email</Button>
+          </S.ContactContainer>
         </S.Section>
       </S.Container>
     </>
