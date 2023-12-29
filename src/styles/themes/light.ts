@@ -37,6 +37,11 @@ const lightTheme: IThemeColors = {
       button: '#36405D',
       background: '#FFFFFF',
     },
+
+    button: {
+      primary: '#242E35',
+      secondary: '#EA5455',
+    },
   },
 };
 

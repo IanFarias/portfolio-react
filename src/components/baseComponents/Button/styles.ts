@@ -3,11 +3,11 @@ import { ButtonProps } from './index';
 
 const BUTTON_VARIANTS = {
   primary: css`
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.button.primary};
     width: 200px;
   `,
   secondary: css`
-    background-color: ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.button.secondary};
   `,
   icon: css``,
 };
