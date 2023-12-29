@@ -43,6 +43,11 @@ export interface IThemeColors {
       button: string;
       background: string;
     };
+
+    button: {
+      primary: string;
+      secondary: string;
+    };
   };
 }
 

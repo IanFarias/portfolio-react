@@ -6,8 +6,9 @@ import CardServices from './components/CardServices';
 import image from '../../assets/avatarmemorygame.png';
 
 import ExperienceTabs from './components/ExperienceTabs';
-import * as S from './styles';
 import Button from '../../components/baseComponents/Button';
+import Footer from '../../components/Footer';
+import * as S from './styles';
 
 const TABS = [
   {
@@ -213,6 +214,7 @@ const Home: React.FC = () => {
           </S.ContactContainer>
         </S.Section>
       </S.Container>
+      <Footer />
     </>
   );
 };

@@ -37,6 +37,11 @@ const darkTheme: IThemeColors = {
       button: '#FFFFFF',
       background: '#36405D',
     },
+
+    button: {
+      primary: '#242E35',
+      secondary: '#EA5455',
+    },
   },
 };
 
