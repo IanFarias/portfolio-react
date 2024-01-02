@@ -7,28 +7,37 @@ interface Props {
 
 export const Nav = styled.nav<Props>`
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(100%)')};
+
   padding: 40px 2rem;
-  width: 100%;
-  top: 60px;
-  left: 0;
-  position: absolute;
-  height: 100vh;
-  visibility: hidden;
+
+  justify-content: center;
+  visibility: visible;
   background-color: ${({ theme }) => theme.colors.background};
 
   transition: transform 0.3s ease-in-out;
 
-  ${({ isOpen }) => (isOpen ? turnVisible : turnHidden)};
+  @media (max-width: 1023px) {
+    height: 100vh;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    transform: ${({ isOpen }) =>
+      isOpen ? 'translateX(0)' : 'translateX(100%)'};
+    ${({ isOpen }) => (isOpen ? turnVisible : turnHidden)};
+  }
 `;
 
 export const LinkContainer = styled.ul`
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  text-align: center;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
 `;
 
 export const LinkNav = styled.a`
@@ -49,4 +58,8 @@ export const ContactContainer = styled.ul`
   display: flex;
   gap: 20px;
   margin-top: 40px;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;

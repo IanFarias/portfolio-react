@@ -10,14 +10,15 @@ const Header: React.FC = () => {
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu);
   };
+
   return (
     <S.Header>
       <a href="#">Ian Farias</a>
+      <MenuNav isOpen={openMenu} />
       <S.Controls>
         <Switch />
         <MenuHamburguer isOpen={openMenu} onClick={handleOpenMenu} />
       </S.Controls>
-      <MenuNav isOpen={openMenu} />
     </S.Header>
   );
 };
