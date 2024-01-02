@@ -24,4 +24,10 @@ export const Header = styled.header`
 export const Controls = styled.div`
   display: flex;
   gap: 15px;
+
+  @media (min-width: 1024px) {
+    button {
+      display: none;
+    }
+  }
 `;
