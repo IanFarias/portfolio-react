@@ -8,20 +8,19 @@ interface Props {
 export const Nav = styled.nav<Props>`
   display: flex;
 
-  padding: 40px 2rem;
-
   justify-content: center;
   visibility: visible;
   background-color: ${({ theme }) => theme.colors.background};
 
-  transition: transform 0.3s ease-in-out;
-
   @media (max-width: 1023px) {
+    transition: transform 0.3s ease-in-out;
+
     height: 100vh;
     position: absolute;
     align-items: center;
     flex-direction: column;
     top: 60px;
+    padding: 40px 2rem;
     left: 0;
     width: 100%;
     transform: ${({ isOpen }) =>
