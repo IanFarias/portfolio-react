@@ -4,6 +4,7 @@ import Icon from '../../components/Icon';
 import CardProject from './components/CardProject';
 import CardServices from './components/CardServices';
 import image from '../../assets/avatarmemorygame.png';
+import meImg from '../../assets/me.png';
 
 import ExperienceTabs from './components/ExperienceTabs';
 import Button from '../../components/baseComponents/Button';
@@ -89,23 +90,26 @@ const Home: React.FC = () => {
     <>
       <Header />
       <S.Container>
-        <S.Section>
+        <S.PresentationSection>
           <div>
-            <S.Subtitle>Meu nome é</S.Subtitle>
-            <Heading level={1} fontWeight={700} transform="uppercase">
-              Ian Farias
-            </Heading>
+            <div>
+              <S.Subtitle>Meu nome é</S.Subtitle>
+              <Heading level={1} fontWeight={700} transform="uppercase">
+                Ian Farias
+              </Heading>
+            </div>
+            <S.Text>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries.
+            </S.Text>
           </div>
-          <S.Text>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries.
-          </S.Text>
-        </S.Section>
-
-        <S.Section>
+          <img src={meImg} alt="" />
+        </S.PresentationSection>
+        <div id="about-me" />
+        <S.AboutSection>
           <Heading level={2} fontWeight={700} transform="uppercase">
             Sobre mim
           </Heading>
@@ -120,9 +124,9 @@ const Home: React.FC = () => {
             dignissim lectus sed pretium. Donec mattis, turpis nec tempus
             bibendum, mauris dui tempor massa
           </S.Text>
-        </S.Section>
-
-        <S.Section>
+        </S.AboutSection>
+        <div id="technologies" />
+        <S.TechnologiesSection>
           <Heading level={2} fontWeight={700} transform="uppercase">
             Tecnologias
           </Heading>
@@ -142,8 +146,9 @@ const Home: React.FC = () => {
               <li>SQL</li>
             </div>
           </S.ListContainer>
-        </S.Section>
-        <S.Section>
+        </S.TechnologiesSection>
+        <div id="services" />
+        <S.ServicesSection>
           <div>
             <S.Subtitle>Serviços</S.Subtitle>
             <Heading level={2} fontWeight={700} transform="uppercase">
@@ -170,8 +175,8 @@ const Home: React.FC = () => {
               }
             />
           </S.CardContainer>
-        </S.Section>
-
+        </S.ServicesSection>
+        <div id="projects" />
         <S.Section>
           <div>
             <S.Subtitle>Portfolio</S.Subtitle>
@@ -191,13 +196,14 @@ const Home: React.FC = () => {
             </li>
           </S.ProjectsContainer>
         </S.Section>
+        <div id="experience" />
         <S.Section>
           <Heading level={2} fontWeight={700} transform="uppercase">
             Experiência
           </Heading>
           <ExperienceTabs experiences={TABS} />
         </S.Section>
-
+        <div id="contact" />
         <S.Section>
           <S.ContactContainer>
             <Heading level={2}>

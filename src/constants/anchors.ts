@@ -1,26 +1,26 @@
 export const LINKS_SECTIONS = [
   {
-    url: '#',
+    url: '#about-me',
     label: 'Sobre mim',
   },
   {
-    url: '#',
+    url: '#technologies',
     label: 'Tecnologias',
   },
   {
-    url: '#',
+    url: '#services',
     label: 'Serviços',
   },
   {
-    url: '#',
+    url: '#projects',
     label: 'Projetos',
   },
   {
-    url: '#',
+    url: '#experience',
     label: 'Experiência',
   },
   {
-    url: '#',
+    url: '#contact',
     label: 'Contato',
   },
 ];
