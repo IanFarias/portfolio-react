@@ -21,7 +21,9 @@ export const Section = styled.section`
   flex-direction: column;
   gap: 20px;
 
-  min-height: 40vh;
+  @media (min-width: 1024px) {
+    min-height: 40vh;
+  }
 `;
 
 export const PresentationSection = styled(Section)`
